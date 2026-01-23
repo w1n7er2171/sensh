@@ -13,18 +13,19 @@ Promise.all([
   const artistReleases = releases.filter(r => r.artist_id === artist.id)
 
   document.getElementById("artist").innerHTML = `
-    <h1>${artist.name}</h1>
-    <p>${artist.bio}</p>
+  <img src="${artist.image}" alt="${artist.name}" class="artist-image">
 
-    <h2>Releases</h2>
-    <ul>
-      ${artistReleases.map(r => `
-        <li>
-          <a href="/release.html?id=${r.id}">
-            ${r.title} (${r.release_date})
-          </a>
-        </li>
-      `).join("")}
-    </ul>
-  `
-})
+  <h1>${artist.name}</h1>
+  <p>${artist.bio}</p>
+
+  <h2>Releases</h2>
+  <ul>
+    ${artistReleases.map(r => `
+      <li>
+        <a href="/release.html?id=${r.id}">
+          ${r.title} (${r.release_date})
+        </a>
+      </li>
+    `).join("")}
+  </ul>
+`
