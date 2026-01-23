@@ -46,6 +46,13 @@ a {
   background: #111;
 }
 
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #111;
+}
+
 .nav {
   position: sticky;
   top: 0;
