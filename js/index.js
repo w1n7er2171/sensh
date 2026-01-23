@@ -7,11 +7,13 @@ Promise.all([
   /* ARTISTS */
   document.getElementById("artists").innerHTML =
     artists.map(a => `
-      <a class="card" href="/artist.html?id=${a.id}">
+      <a class="card artist-card" href="/artist.html?id=${a.id}">
+        <img src="${a.image}" alt="${a.name}">
         <strong>${a.name}</strong>
         <p class="muted">${a.bio}</p>
       </a>
     `).join("")
+
 
   /* RELEASES (останні 4) */
   const latest = releases
