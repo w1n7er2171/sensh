@@ -1,0 +1,11 @@
+[
+  {
+    "id": "concert_001",
+    "artist_ids": ["2171zip", "neverbloom"],
+    "title": "Orange Room Live performance",
+    "location": "Orange Room",
+    "datetime": "2025-09-15T20:00",
+    "tickets": "https://tickets.com/...",
+    "description": "Official label showcase"
+  }
+]
