@@ -18,3 +18,7 @@ body[data-theme="nyx"] {
   --fg: #cfcfff;
   --accent: #7a7aff;
 }
+
+body[data-theme="manifesto"] {
+  transition: opacity 0.8s ease;
+}
