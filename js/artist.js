@@ -14,10 +14,11 @@ Promise.all([
   const now = new Date()
 
   const upcomingConcerts = concerts
-    .filter(c =>
-      new Date(c.datetime) > now &&
-      c.artist_ids.includes(artist.id)
-    )
+    .filter(c => {
+      if (!Array.isArray(c.artist_ids)) return false
+      return new Date(c.datetime) > now &&
+             c.artist_ids.includes(artist.id)
+    })
     .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))
     .slice(0, 3)
 
