@@ -38,6 +38,14 @@ a {
   filter: grayscale(1);
 }
 
+.artist-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+  background: #111;
+}
+
 .nav {
   position: sticky;
   top: 0;
