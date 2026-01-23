@@ -1,0 +1,19 @@
+[
+  {
+    "id": "2171zip",
+    "name": "2171zip",
+    "bio": "Experimental electronic, metal and rap music",
+    "image": "/images/artists/mosh.jpg",
+    "socials": {
+      "instagram": "https://instagram.com/w1n7er_2171",
+      "soundcloud": "https://soundcloud.com/w1n7er_2171"
+    }
+  },
+  {
+    "id": "kanna",
+    "name": "kanna",
+    "bio": "Metal",
+    "image": "/images/artists/nyx.jpg",
+    "socials": {}
+  }
+]
