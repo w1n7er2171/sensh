@@ -1,6 +1,7 @@
 [
   {
     "id": "2171zip",
+    "theme": "2171zip",
     "name": "2171zip",
     "bio": "Experimental electronic, metal and rap music",
     "image": "/images/artists/mosh.jpg",
@@ -11,6 +12,7 @@
   },
   {
     "id": "neverbloom",
+    "theme": "neverbloom",
     "name": "neverbloom",
     "bio": "suffering",
     "image": "/images/artists/nyx.jpg",
@@ -18,6 +20,7 @@
   },
   {
     "id": "kanna",
+    "theme": "kanna",
     "name": "kanna",
     "bio": "Metal",
     "image": "/images/artists/nyx.jpg",
