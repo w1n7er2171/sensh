@@ -36,3 +36,20 @@
   letter-spacing: 0.08em;
   opacity: 0.6;
 }
+
+.release-filters {
+  margin-top: 2rem;
+}
+
+.release-filters button {
+  background: none;
+  border: none;
+  color: var(--fg);
+  opacity: 0.6;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.release-filters button:hover {
+  opacity: 1;
+}
