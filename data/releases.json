@@ -6,10 +6,23 @@
     "type": "Single",
     "release_date": "2025-20-11",
     "cover": "/images/releases/cold_signal.jpg",
+
     "description": "Debut non-instrumental Single by 2171zip",
+    
+    "genres": ["electronic", "experimental", "rap"],
+
+    "comments": [
+      {
+        "author": "2171zip",
+        "text": "Біт лежав в мене вже давно, написав до нього текст, вирішив що пора перестати забивати голову тим що 'текст поганий', 'біт такий собі', нарешті взяти, і випустити хоч щось."
+      }
+    ],
+
     "links": {
       "spotify": "https://spotify.com/...",
       "bandcamp": "https://bandcamp.com/..."
-    }
+    },
+
+    "orange_room_id": ""
   }
 ]
