@@ -7,5 +7,14 @@
     "datetime": "2025-09-15T20:00",
     "tickets": "https://tickets.com/...",
     "description": "Official label showcase"
+  },
+  {
+    "id": "concert_002",
+    "artist_ids": ["2171zip"],
+    "title": "Orange Room - 2171zip - Live performance",
+    "location": "Orange Room",
+    "datetime": "2026-02-03T10:00",
+    "tickets": "https://tickets.com/...",
+    "description": "2171zip Live at Orange Room"
   }
 ]
