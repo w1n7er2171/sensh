@@ -26,3 +26,29 @@ a {
   opacity: 0.4;
   filter: grayscale(1);
 }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background: var(--bg);
+}
+
+.nav a {
+  color: var(--fg);
+  opacity: 0.8;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+.nav-right a {
+  margin-left: 1.5rem;
+}
