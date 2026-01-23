@@ -11,6 +11,29 @@ Promise.all([
   const artist = artists.find(a => a.id === artistId)
   if (!artist) return
 
+  const now = new Date()
+
+  const upcomingConcerts = concerts
+    .filter(c =>
+      new Date(c.datetime) > now &&
+      c.artist_ids.includes(artist.id)
+    )
+    .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))
+    .slice(0, 3)
+
+  ${upcomingConcerts.length ? `
+    <h2>Upcoming concerts</h2>
+    <ul>
+      ${upcomingConcerts.map(c => `
+        <li>
+          ${new Date(c.datetime).toLocaleDateString()} —
+          ${c.location}
+        </li>
+      `).join("")}
+    </ul>
+  ` : ""}
+
+  
   document.body.dataset.theme = artist.theme || "default"
 
   const artistReleases = releases
