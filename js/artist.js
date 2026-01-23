@@ -7,7 +7,12 @@ Promise.all([
   fetch("./data/concerts.json").then(r => r.json())
 ]).then(([artists, releases, concerts]) => {
 
-
+if (!artistId) {
+  document.getElementById("artist").innerHTML =
+    "<p>No artist specified</p>"
+  throw new Error("artistId missing")
+}
+  
   const artist = artists.find(a => a.id === artistId)
   if (!artist) return
 
