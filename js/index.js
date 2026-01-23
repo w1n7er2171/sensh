@@ -15,18 +15,25 @@ Promise.all([
     `).join("")
 
 
-  /* RELEASES (останні 4) */
   const latest = releases
     .sort((a, b) => new Date(b.release_date) - new Date(a.release_date))
-    .slice(0, 4)
-
+    .slice(0, 5)
+  
   document.getElementById("releases").innerHTML =
-    latest.map(r => `
-      <a class="card" href="/release.html?id=${r.id}">
-        <strong>${r.title}</strong>
-        <p class="muted">${r.release_date}</p>
-      </a>
-    `).join("")
+    latest.map(r => {
+      const artist = artists.find(a => a.id === r.artist_id)
+      return `
+        <a class="card release-card" href="./release.html?id=${r.id}">
+          <img src="${r.cover}" alt="${r.title}">
+          <strong>${r.title}</strong>
+          <div class="muted">
+            ${artist?.name || ""} · ${r.type}<br>
+            ${r.release_date}
+          </div>
+        </a>
+      `
+    }).join("")
+
 
   /* CONCERTS */
   const now = new Date()
