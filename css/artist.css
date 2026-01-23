@@ -4,3 +4,35 @@
   object-fit: cover;
   margin-bottom: 2rem;
 }
+
+.release-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.release-card {
+  display: block;
+  color: inherit;
+}
+
+.release-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #111;
+  margin-bottom: 0.5rem;
+}
+
+.release-meta {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.release-type {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.6;
+}
